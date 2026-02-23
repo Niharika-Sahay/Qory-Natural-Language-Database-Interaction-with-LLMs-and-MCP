@@ -140,8 +140,10 @@ These are the subsequent h2 headings and paragraph to introduce _Qory_.
 - `results`: is the `div` that contains all the `movie` that will be fetched and rendered as `div`.
 
 This is how the website looks without any styling:
+![Screenshot of the webpage with no styling in CSS](/docs/assets/plain_html.png)
 
-Here you can see that I have purposefully taken highly contrasting colors to show you the container structures. 
+Here you can see that I have purposefully taken highly contrasting colors to show you the container structures.
+![Screenshot of the webpage with backgound colors to understand container structuring](/docs/assets/overlapping_colors.png)
 - `yellow`: Is the `img` class `div`.
 - `dark blue`: Is the actual image of _Qory_.
 - `orange`: Is the `h2` heading that says _Hi, I'm Qory_.
@@ -152,7 +154,9 @@ Here you can see that I have purposefully taken highly contrasting colors to sho
 - `bright pink`: Is the `input-wrapper`.
 - `gray`: Is the `input` element where the user actually types their search.
 - `light blue`: Is the `search-button`.
+
 As you can observe, the `search-wrapper`, `query-form` and `input-container` all cover the same area. And to display the colors, I had to change the width of those containers. This is done for alignment purposes and could be explained through CSS.
+![Screenshot of webpage with containers resized and having background colors to better understand html stucturing](/docs/assets/no_overlap.png)
 
 ## Understanding CSS
 
@@ -219,6 +223,7 @@ input {
 `padding` is applied to the inside of the container. This increases the size \(vertical\) of the search bar. `Width` increases the length \(horizontal\) of the search bar. `border-radius` round the corners of the search bar. `border:none` removes the default black border that appears on the search bar.
 
 As you can see, this is the current styling of the webpage.
+![Screenshot of webpage with current styles described](/docs/assets/search_improve.png)
 
 ```
 input:focus {
@@ -245,6 +250,7 @@ The black border that you can see within the search bar is called **focus outlin
 }
 ```
 Now, as you had seen in the earlier that while styling, the search button had aligned itself below the search bar. To display it in the same line, we needed to wrap both these elements together in one container that we could turn into a _flexbox_ essentially to solve this problem. Thus, the `input-container` was added to wrap both the `input` element and search button into one container.
+![Screenshot of button styled to be in the same line as the search bar](/docs/assets/search_button.png)
 
 ```
 button {
@@ -266,6 +272,7 @@ Here, we style the search button.
 }
 ```
 Here, we are setting the `width` \(horizontal\) to match the width of the search bar. It has then been translated along the X axis, i.e, moved horizontally to align below the search bar and not the search button. `margin` has been applied to top and bottom so that it creates a gap between the search bar and itself, as well as the body and itself at the bottom.
+![Screenshot of webpage after results that are not styled](/docs/assets/results_nostyling.png)
 
 ```
 .movie {
@@ -289,6 +296,7 @@ The individual movie titles are rendered inside another `div` element with a cla
 }
 ```
 Lastly, to make alternative movies apear with a two alternative different background colors, we use the `nth-child()` property of CSS. This makes every **even** numbered movie in the dropdown appear with `#F5EEE6` background color and every **odd** numbered movie in the dropdown appear with `#f3ebd3` background color.
+![Screenshot of the final webpage with everything styled and working](/docs/assets/qory_search_results.png)
 
 With this, you are set for success!👑\
 Need help with your prompts?\
