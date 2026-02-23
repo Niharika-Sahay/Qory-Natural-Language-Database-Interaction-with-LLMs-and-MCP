@@ -38,12 +38,15 @@ Here are quick links to download both Python and MongoDB:
 - [Download MongoDB](https://www.mongodb.com/try/download/community)
 
 After all the necessary downloads and setups have been done, we will make the syllabus from where we'll ask questions to our AI aka **DataSet**.
-##DataSet Download and Setup
-In this project, I have used a Dataset from [Kaggle](https://www.kaggle.com/). It consists two csv files- `tmdb_5000_credits.csv` and `tmdb_5000_movies.csv`. I have used `tmdb_5000_movies.csv`.
-To use the same dataset, download it from the link below. It'll be downloaded as a zip file. Extract all.
-Click to [Download Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
-Then open **MongoDB compass**. Connect to your `localhost` connection. Then create a _Database_ named **Movies** or any name of your choice. Inside the database, create a _Collection_ named **movie_dataset** or again, any name of you choice.
-Open the Collection and click on **Import Data**, then import `tmdb_5000_movies.csv`. You can also remove any fields you do not want to use by simply unchecking the column. You can also change the datatypes of the fields through the drop down that appears beside them.
+## DataSet Download and Setup
+In this project, I have used a Dataset from [Kaggle](https://www.kaggle.com/). It consists two csv files- `tmdb_5000_credits.csv` and `tmdb_5000_movies.csv`. I have used `tmdb_5000_movies.csv`.\
+To use the same dataset, download it from the link below. It'll be downloaded as a zip file. Extract all.\
+Click to [Download Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)\
+- Then open **MongoDB compass**. Connect to your `localhost` connection.
+- Then create a _Database_ named **Movies** or any name of your choice.
+- Inside the database, create a _Collection_ named **movie_dataset** or again, any name of you choice.
+- Open the Collection and click on **Import Data**, then import `tmdb_5000_movies.csv`.\
+You can also remove any fields you do not want to use by simply unchecking the column. You can also change the datatypes of the fields through the drop down that appears beside them.
 Here's how I had structured the documents in my Collection: 
 ```
 _id: ObjectId\(699b2217d853bddf30992016\)
@@ -63,22 +66,23 @@ As you may notice, I have deleted some fields that I did not require. This allow
 
 Finishing this step, brings you to the final step of setups required for creating your AI bud.
 
-##Setting up the Environment 
--Now, create a folder and name your project. I'll be naming mine as **AI_Search** for this documentation.
--Open the folder in _VSCode_.
--Open your Terminal in VSCode. Create a Virtual Environment:
+## Setting up the Environment 
+- Now, create a folder and name your project. I'll be naming mine as **AI_Search** for this documentation.
+- Open the folder in _VSCode_.
+- Open your Terminal in VSCode. Create a Virtual Environment:
 ```py -3 -m venv .venv```
--Activate the Virtual Environment:
+- Activate the Virtual Environment:
 ```.venv\Scripts\activate```
--Then type:
+- Then type:
 ```pip install flask pymongo requests``` 
 This installs three essential Python Libraries: **Flask** creates a web server, **PyMongo** enables communication with a MongoDB database, and **Requests** allows your application to send HTTP requests to other web services.
--Then you should write your code. And to run your app.py, run the following command in your Terminal:
+- Then you should write your code. And to run your app.py, run the following command in your Terminal:
 ```py app.py```
 
 Wohoo!🎉 Now, you are absolutely ready to Create your own AI friend 😎. If you want to understand the code and be able to implement this project in your own style, visit:
-[Understand app.py](docs/Understand_app.py.md)
-[Understand index.html](docs/Understand_app.py.md)
+- [Understand app.py](docs/Understand_app.py.md)
+- [Understand index.html](docs/Understand_app.py.md)
+
 Need help with Prompts?
-[Prompt Guide](docs/Prompt_Guide.md)
+- [Prompt Guide](docs/Prompt_Guide.md)
 
