@@ -1,5 +1,6 @@
-##Installation Guide for Ollama: Gemma 7B
+## Installation Guide for Ollama: Gemma 7B
 To create your own _Qory_, you would first need to install the brains for it. Gemma 7B is a light-weight open large language model (LLM) created by Google DeepMind which allows you to run AI on consumer-grade hardware, that is your own laptops and desktops. You can learn more about it in the official documentation for [Gemma Models](https://ai.google.dev/gemma/docs)
+
 To install _Gemma_, you'll first need to install [**Ollama**](https://ollama.com/download). Why? Ollama is an open-source tool that simplifies the process of downloading, managing, and running various open-source models. You could see it as folder consisting of several other AI Model files from where you can install and use not only _Gemma_ but other open-source AI models as well.
 
 Click to install [**Ollama**](https://ollama.com/download) OR [https://ollama.com/download](https://ollama.com/download)
@@ -26,7 +27,7 @@ That means the AI is ready.
 
 Type: `Hello`; if it responds, the Setup is Successful! 🎉
 
-##Other Installations Required
+## Other Installations Required
 For this project, Python and MongoDB should be installed and set up.
 
 Check if you already have python installed and the path setup: `python --version`.
