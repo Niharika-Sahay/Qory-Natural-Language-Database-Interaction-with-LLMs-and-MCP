@@ -77,4 +77,7 @@ This installs three essential Python Libraries: **Flask** creates a web server, 
 ```py app.py```
 
 Wohoo! Now, you are absolutely ready to Create your own AI friend. If you want to understand the code and be able to implement this project in your own style, visit:
-
+[Understand app.py](docs/Understand app.py.md)
+[Understand index.html](https://github.com/Niharika-Sahay/Qory-Natural-Language-Database-Interaction-with-LLMs-and-MCP/blob/c190af05f7653761acc8a5553ac1c75d9a94ab0c/docs/Understand%20index.html)
+Need help with Prompts?
+[Prompt Guide](https://github.com/Niharika-Sahay/Qory-Natural-Language-Database-Interaction-with-LLMs-and-MCP/blob/c190af05f7653761acc8a5553ac1c75d9a94ab0c/docs/Prompt%20Guide)
