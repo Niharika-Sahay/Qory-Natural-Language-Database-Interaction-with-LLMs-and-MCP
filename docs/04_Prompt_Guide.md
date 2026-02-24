@@ -185,7 +185,7 @@ Prompt engineering was chosen because:
 This makes _Qory_ practical and portable✨
 
 Other Quick Links for Navigation:
-- [Get Quick Overview of the Project](./README.md)
+- [Get Quick Overview of the Project](../README.md)
 - [Installation & Setup](01_Installation_&_Setup.md)
 - [Understand app.y](02_Understand_app.py.md)
 - [Understand index.html](03_Understand_index.html.md)
