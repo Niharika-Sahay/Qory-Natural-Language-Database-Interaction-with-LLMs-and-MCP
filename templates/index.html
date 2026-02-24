@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Movie Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #AAC4F5;
+            color: white;
+            font-family: Arial;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 5px 0;
+            font-size: 50px;
+        }
+
+        p {
+            margin: 5px 0 10px 0;
+            font-size: 20px;
+        }
+
+        .search-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 400px;
+            font-size: 16px;
+            border-radius: 12px;
+            border: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .input-wrapper {
+            padding: 4px;
+            background: linear-gradient(167deg, #9195F6, #F9F07A);
+            border-radius: 12px;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            padding: 9px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #8CA9FF;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .results {
+            width: 80%;
+            transform: translateX(-40px);
+            margin: 2px 0;
+        }
+
+        .movie {
+            padding: 10px 10px;
+            border-bottom: 1px solid #333;
+            border-radius: 5px;
+            margin-bottom: 3px;
+        }
+
+        .movie:nth-child(even) {
+            background: #F5EEE6;
+            color: black;
+        }
+
+        .movie:nth-child(odd) {
+            background: #f3ebd3;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="img"><img width="80px" src="{{ url_for('static', filename='assets/qory.png') }}" alt="Qory"></div>
+    <h2>Hi, I'm Qory.</h2>
+    <p>What's today's vibe?</p>
+
+    <div class="search-wrapper">
+        <form id="queryForm">
+            <div class="input-container">
+                <div class="input-wrapper"><input type="text" id="queryInput" placeholder="Action movies above rating 7" autocomplete="off" required></div>
+                <button type="submit">Search</button>
+            </div>
+
+        </form>
+
+        <div id="results" class="results"></div>
+    </div>
+
+
+
+
+
+    <script>
+        document.getElementById("queryForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            let query = document.getElementById("queryInput").value;
+
+            let response = await fetch("/query", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: "query=" + encodeURIComponent(query)
+            });
+
+            let data = await response.json();
+
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            if (data.error) {
+                resultsDiv.innerHTML = "<p style='color:red'>" + data.error + "</p>";
+                return;
+            }
+
+            if (data.length === 0) {
+                resultsDiv.innerHTML = "<p>No movies found.</p>";
+                return;
+            }
+
+            data.forEach(title => {
+                resultsDiv.innerHTML += `<div class="movie">${title}</div>`;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
