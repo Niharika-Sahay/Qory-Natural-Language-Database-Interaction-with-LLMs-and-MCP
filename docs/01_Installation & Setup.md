@@ -80,9 +80,9 @@ This installs three essential Python Libraries: **Flask** creates a web server, 
 ```py app.py```
 
 Wohoo!🎉 Now, you are absolutely ready to Create your own AI friend 😎. If you want to understand the code and be able to implement this project in your own style, visit:
-- [Understand app.py](docs/02Understand_app.py.md)
-- [Understand index.html](docs/03_Understand_index.html.md)
+- [Understand app.py](02Understand_app.py.md)
+- [Understand index.html](03_Understand_index.html.md)
 
 Need help with Prompts?
-- [Prompt Guide](docs/04_Prompt_Guide.md)
+- [Prompt Guide](04_Prompt_Guide.md)
 
