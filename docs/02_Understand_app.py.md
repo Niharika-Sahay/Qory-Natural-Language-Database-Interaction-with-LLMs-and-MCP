@@ -212,6 +212,6 @@ Hover over the link and click **Follow link** to open the application in your br
 
 And that's money!✨ 
 
-If you want to better understand how to make the interface of your web application, You can click on [Understand index.html](docs/Understand_index.html.md).\
+If you want to better understand how to make the interface of your web application, You can click on [Understand index.html](Understand_index.html.md).\
 Need help with your prompts?
-[Prompt Guide](docs/Prompt_Guide.md).
+[Prompt Guide](Prompt_Guide.md).
