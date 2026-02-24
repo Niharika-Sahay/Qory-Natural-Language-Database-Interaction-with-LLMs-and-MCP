@@ -300,7 +300,7 @@ Lastly, to make alternative movies apear with a two alternative different backgr
 
 With this, you are set for success!👑\
 Need help with your prompts?\
-[Prompt Guide](docs/Prompt_Guide.md)
+[Prompt Guide](04_Prompt_Guide.md)
 
 
 
